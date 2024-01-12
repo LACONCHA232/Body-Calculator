@@ -1,0 +1,18 @@
+{
+  "name": "body-calculator",
+  "version": "1.0.0",
+  "description": "Calculator for every aspect of our body, your IMC,how much weight do you need to loss or gain, how much calories do you need to complete your goals,etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "y",
+    "Javascript",
+    "Vanilla"
+  ],
+  "author": "Diego Diaz De La Concha <diegodiazdelaconcha93@gmail.com>",
+  "license": "MIT"
+}

@@ -1,0 +1,43 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+/* NAV */
+nav {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: blanchedalmond;
+}
+.another-pages a{
+    padding-right: 1rem;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+}
+
+/* MAIN */
+.container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.container h1 {
+    font-size: 3rem;
+}
+
+
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    height: 100%;
+}
