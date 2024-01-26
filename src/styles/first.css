@@ -13,28 +13,56 @@ nav {
     height: 10rem;
     display: flex;
     justify-content: space-between;
-    background-color: blanchedalmond;
+    background-color: #e60023;
+    .logo {
+        width: 100%;
+        height: 100%;
+    }
+    .another-pages a{
+        padding-right: 1rem;
+    }
 }
-.another-pages a{
-    padding-right: 1rem;
-}
-
-.logo {
-    width: 100%;
-    height: 100%;
-}
-
 /* MAIN */
 .container {
     width: 100%;
     height: 100%;
     text-align: center;
+    h1 {
+        font-size: 2rem;
+        position: absolute;
+        margin: 5rem;
+    }
+    .background-image img {
+        width: 100%;
+        height: 100%;
+    }
 }
-.container h1 {
-    font-size: 3rem;
+/* FORMS */
+.formulario {
+    width: 100%;
+    height: 100%;
+    .forms-container {
+        border: 1px solid black;
+        background-color: #F0F8FF;
+        padding: 3rem;
+        margin: 5rem 10rem;
+    }
 }
 
-
+.forms {
+    display: grid;
+    grid-template-columns: auto;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    label {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    input{
+        display: inline-block;
+        width: 100%;
+    }
+}
 
 /* FOOTER */
 .footer {
