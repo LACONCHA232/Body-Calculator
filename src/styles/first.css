@@ -10,16 +10,50 @@ html {
 /* NAV */
 nav {
     width: 100%;
-    height: 10rem;
+    height: 15rem;
     display: flex;
     justify-content: space-between;
-    background-color: #e60023;
+    background-color:cornsilk;
+    align-items: center;
     .logo {
         width: 100%;
-        height: 100%;
+        height: 8rem;
     }
-    .another-pages a{
+    .burguer-icon {
+        width: 100%;
+        height: 5rem;
+    }
+    .another-pages a {
         padding-right: 1rem;
+    }
+    .burguer-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10rem;
+        right: 0;
+        width: 17rem;
+        height: 40rem;
+        border-radius: 3rem;
+        padding: 5rem 0;
+        background-color: rgb(0, 0, 0);
+        a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+        }
+        .links {
+            border: 0.1rem solid rgb(255, 255, 255);
+            border-radius: 1rem;
+            padding: 2rem 1rem;
+            .links-icons {
+                
+            }
+        }
+    }
+    .inactive {
+        display: none;
     }
 }
 /* MAIN */
@@ -27,40 +61,60 @@ nav {
     width: 100%;
     height: 100%;
     text-align: center;
-    h1 {
-        font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .main-title {
         position: absolute;
         margin: 5rem;
+        .title {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .subtitle {
+            font-size: 1.5rem;
+        }
     }
     .background-image img {
         width: 100%;
-        height: 100%;
+        height: 50rem;
     }
 }
 /* FORMS */
 .formulario {
     width: 100%;
     height: 100%;
-    .forms-container {
+    background-color: cornsilk;
+    padding: 4rem 0;
+    .forms-container  {
         border: 1px solid black;
         background-color: #F0F8FF;
         padding: 3rem;
-        margin: 5rem 10rem;
-    }
-}
-
-.forms {
-    display: grid;
-    grid-template-columns: auto;
-    margin-bottom: 2rem;
-    gap: 1rem;
-    label {
-        font-size: 1.5rem;
-        width: 100%;
-    }
-    input{
-        display: inline-block;
-        width: 100%;
+        width: 50%;
+        margin: 0 auto;
+        .forms-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .forms {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            margin-bottom: 2rem;
+            gap: 2rem;
+            label {
+                font-size: 1.5rem;
+                width: 100%;
+            }
+            input {
+                display: inline-block;
+                width: 100%;
+            }
+            .submit {
+                margin: 1rem 0;
+            }
+        }
     }
 }
 

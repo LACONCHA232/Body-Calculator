@@ -10,25 +10,40 @@
     <header>
         <nav class="nav-bar">
             <picture>
-                <img class="logo" src="https://e7.pngegg.com/pngimages/1017/208/png-clipart-usability-testing-user-experience-software-testing-logo-user-experience-company-text.png" alt="test-logo">
+                <img class="logo" src="./imgs/logotipo2.png" alt="test-logo">
             </picture>
-            <div class="another-pages">
-                <a href="">Calorias de Alimentos</a>
-                <a href="">De Sueño</a>
-                <a href="">Maximo Potencial de Altura</a>
-            </div>
+            <picture>
+                <img class="burguer-icon" src="./imgs/burguer-icon.png" alt="burguer-icon">
+            </picture>
+            <section class="burguer-menu inactive">
+                <div class="links">
+                    <img class="links-icons" src="" alt="calories-icon">
+                    <a href="">Calorias de Alimentos</a>
+                </div>
+                <div class="links">
+                    <img class="links-icons" src="" alt="dream-icon">
+                    <a href="">De Sueño</a>
+                </div>
+                <div class="links">
+                    <img class="links-icons" src="" alt="height-icon">
+                    <a href="">Maximo Potencial de Altura</a>
+                </div>
+            </section>
         </nav>
     </header>
     <main>
         <section class="container">
-            <h1>CALCULADORA CORPORAL</h1>
+            <div class="main-title">
+                <h1 class="title">CALCULADORA CORPORAL</h1>
+                <h3 class="subtitle">Lorem ipsum dolor sit amet consectetur </h3>
+            </div>
             <picture class="background-image">
                 <img src="./imgs/Desert-img.jpg" alt="Desert-image">
             </picture>
         </section>
         <section class="formulario">
             <div class="forms-container">
-                <h1>FORMS</h1>
+                <h1 class="forms-title">FORMS</h1>
                 <form id="myForms" action="" method="get" class="forms">
                     <div>
                         <label for="Weight">Weight</label>
@@ -46,10 +61,10 @@
                         <label for="genero">Genero</label>
                         <input type="text" id="genero" name="genero">
                     </div>
+                    <div>
+                        <input type="submit" form="myForms" class="submit">
+                    </div>
                 </form>
-                <div>
-                    <input type="submit" form="myForms" class="submit">
-                </div>
             </div>
         </section>
     </main>
@@ -69,4 +84,5 @@
         </section>
     </footer>
 </body>
+<script src="../src/index.js"></script>
 </html>
