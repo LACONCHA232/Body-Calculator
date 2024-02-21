@@ -9,23 +9,25 @@
 <body>
     <header>
         <nav class="nav-bar">
-            <picture>
-                <img class="logo" src="./imgs/logotipo2.png" alt="test-logo">
-            </picture>
-            <picture>
-                <img class="burguer-icon" src="./imgs/burguer-icon.png" alt="burguer-icon">
-            </picture>
+            <section class="container-nav">
+                <picture>
+                    <img class="logo" src="./imgs/logotipo2.png" alt="test-logo">
+                </picture>
+                <picture class="container-burguerIcon">
+                    <img class="burguer-icon" src="./imgs/burguer-icon.png" alt="burguer-icon">
+                </picture>
+            </section>
             <section class="burguer-menu inactive">
                 <div class="links">
-                    <img class="links-icons" src="" alt="calories-icon">
+                    <img class="links-icons" src="./imgs/calorias.png" alt="calories-icon">
                     <a href="">Calorias de Alimentos</a>
                 </div>
                 <div class="links">
-                    <img class="links-icons" src="" alt="dream-icon">
+                    <img class="links-icons" src="./imgs/dormir.png" alt="dream-icon">
                     <a href="">De Sueño</a>
                 </div>
                 <div class="links">
-                    <img class="links-icons" src="" alt="height-icon">
+                    <img class="links-icons" src="./imgs/altura.png" alt="height-icon">
                     <a href="">Maximo Potencial de Altura</a>
                 </div>
             </section>
@@ -34,11 +36,11 @@
     <main>
         <section class="container">
             <div class="main-title">
-                <h1 class="title">CALCULADORA CORPORAL</h1>
-                <h3 class="subtitle">Lorem ipsum dolor sit amet consectetur </h3>
+                <h1 class="title">BODY CALCULATOR</h1>
+                <h3 class="subtitle">Calorie count</h3>
             </div>
             <picture class="background-image">
-                <img src="./imgs/Desert-img.jpg" alt="Desert-image">
+                <img src="./imgs/backgrounds/gimnasio.jpg" alt="Desert-image">
             </picture>
         </section>
         <section class="formulario">
@@ -62,25 +64,90 @@
                         <input type="text" id="genero" name="genero">
                     </div>
                     <div>
+                        <label for="activity">Activity</label>
+                        <br>
+                        <select name="activity" id="activity" form="myForms">
+                            <option value="1.2">Sedentary</option>
+                            <option value="1.375">Lightly active</option>
+                            <option value="1.55">Moderately active</option>
+                            <option value="1.725">Very active</option>
+                            <option value="1.9">Extra active</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="reset" form="myForms" class="reset">
+                    </div>
+                    <div>
                         <input type="submit" form="myForms" class="submit">
                     </div>
                 </form>
             </div>
         </section>
+        <section class="results">
+            <div class="results-container">
+                <div class="titles">GOALS</div>
+                <div class="titles">Calories</div>
+                <div class="titles">Protein</div>
+                <div class="titles">Fat</div>
+                <div class="titles">Carbohydrates</div>
+                <div class="titles">Deficit</div>
+                <div>0</div>
+                <div>0</div>
+                <div>0</div>
+                <div>0</div>
+                <div class="titles">Surplus</div>
+                <div>0</div>
+                <div>0</div>
+                <div>0</div>
+                <div>0</div>
+                <div class="titles">Maintain</div>
+                <div>0</div>
+                <div>0</div>
+                <div>0</div>
+                <div>0</div>
+                <div class="titles">Recomposing</div>
+                <div>0</div>
+                <div>0</div>
+                <div>0</div>
+                <div>0</div>
+            </div>
+        </section>
     </main>
     <footer>
-        <section class="footer">
-            <h1>INFO DE CONTACTO</h1>
-            <ul>
-                <li>Instagram</li>
-                <li>Linkdin</li>
+        <section class="footer-container">
+            <div class="infoContact">
+                <h1 class="TitleFooter">INFO DE CONTACTO</h1>
+                <ul>
                 <li>
-                    Git Hub
+                    <img src="./imgs/gmail.png" class="IconsFooter" alt="gmail">
+                    <h3>Correo: diegodiazdelaconcha93@gmail.com</h3>
                 </li>
-                <li>Facebook</li>
-                <li>Correo</li>
-                <li>Portfolio</li>
-            </ul>
+                <li>
+                    <img src="./imgs/portafolio (1).png" class="IconsFooter" alt="">
+                    <h3>Portfolio:</h3>
+                </li>
+                </ul>
+            </div>
+            <div class="SocialMedia">
+                <ul>
+                    <li>
+                        <img src="./imgs/instagram.png" class="IconsFooter" alt="Instagram">
+                        <a href="https://www.instagram.com/de_la_concha23/">Instagram</a>
+                    </li>
+                    <li>
+                        <img src="./imgs/linkedin.png" class="IconsFooter" alt="Linkdin">
+                        <a href="https://www.linkedin.com/feed/">linkedin</a>
+                    </li>
+                    <li>
+                        <img src="./imgs/github (1).png" class="IconsFooter" alt="GitHub">
+                        <a href="https://github.com/LACONCHA232">GitHub</a>
+                    </li>
+                    <li>
+                        <img src="./imgs/facebook.png" class="IconsFooter" alt="Facebook">
+                        <a href="">Facebook</a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </footer>
 </body>
