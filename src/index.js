@@ -1,13 +1,21 @@
 
-// MENU HAMBURGUESA
-const burguerIcon = document.querySelector('.burguer-icon');
-const menu = document.querySelector('.burguer-menu');
+const form = document.querySelector('#myForms');
+form.addEventListener('submit', DATA);
+function DATA(event) {
+    event.preventDefault();
 
-burguerIcon.addEventListener('click', toggleMenu);
+    const weight = document.querySelector('#Weight').value;
+    const height = document.querySelector('#Height').value;
+    const age = document.querySelector('#Age').value;
+    const gender = document.querySelector('#Gender').value;
+    const activity = document.querySelector('#Activity').value;
 
-function toggleMenu() {
-    menu.classList.toggle('inactive');
-    console.log('clicked');
+    console.log(weight,height,age,gender,activity);
+
+    const TDA = TMBH(weight,height,age);
+    const sedentary = TDA * 1.2;
+    console.log("dactor de actividad " + sedentary);
+
 }
 
 // FUNCION PARA LA TASA METABOLICA BASAL DEL HOMBRE
@@ -23,17 +31,16 @@ function TMBM(weight,height,age) {
     return TMBmujer;
 }
 // ingresando los datos por el momento
-const TasaMetabolicaBasalHombre = TMBH(67,177,21);
-const TasaMetabolicaBasalMujer = TMBH(51,160,19);
+// const TasaMetabolicaBasalHombre = TMBH(67,177,21);
+// const TasaMetabolicaBasalMujer = TMBH(51,160,19);
 
 // la multiplicacion funciona
-function FactorA(activity) {
-    const factorActividad = activity;
-    const sedentary = TasaMetabolicaBasalHombre * 1.2;
-    console.log(sedentary);
-    // if (true) {
-    //     const sedentary = TasaMetabolicaBasalHombre * 1.2;
-    //     console.log(sedentary);
-    // }
-}
-
+// function FactorA() {
+//     const factorActividad = activity;
+//     const sedentary = TasaMetabolicaBasalHombre * 1.2;
+//     console.log(sedentary);
+//     // if (true) {
+//     //     const sedentary = TasaMetabolicaBasalHombre * 1.2;
+//     //     console.log(sedentary);
+//     // }
+// }

@@ -13,6 +13,7 @@
     "Javascript",
     "Vanilla"
   ],
+  "type": "module",
   "author": "Diego Diaz De La Concha <diegodiazdelaconcha93@gmail.com>",
   "license": "MIT"
 }
