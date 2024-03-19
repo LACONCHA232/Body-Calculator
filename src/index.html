@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Body_Calculator</title>
     <link rel="stylesheet" href="./styles/first.css">
 </head>
+
 <body>
     <header>
         <nav class="nav-bar">
             <section class="container-nav">
-                <picture>
-                    <img class="logo" src="./imgs/logotipo2.png" alt="test-logo">
+                <picture class="logotipos-nav">
+                    <img class="logotipo1" src="./imgs/Logotipo terminado.png" alt="logotipo de la marca">
+                    <img class="logotipo2" id="tipo2" src="./imgs/tipografia sin fondo.png" alt="logotipo de la pagina">
                 </picture>
                 <picture class="container-burguerIcon">
                     <img class="burguer-icon" src="./imgs/burguer-icon.png" alt="burguer-icon">
                 </picture>
             </section>
             <section class="burguer-menu inactive">
-                <div class="links">
+                <div class="links" id="Kcal_food">
                     <img class="links-icons" src="./imgs/calorias.png" alt="calories-icon">
                     <a href="">Calorias de Alimentos</a>
                 </div>
-                <div class="links">
+                <div class="links" id="sleep_calc">
                     <img class="links-icons" src="./imgs/dormir.png" alt="dream-icon">
                     <a href="">De Sueño</a>
                 </div>
-                <div class="links">
+                <div class="links" id="Max_height">
                     <img class="links-icons" src="./imgs/altura.png" alt="height-icon">
                     <a href="">Maximo Potencial de Altura</a>
                 </div>
@@ -40,7 +43,8 @@
                 <h3 class="subtitle">Calorie count</h3>
             </div>
             <picture class="background-image">
-                <img src="./imgs/backgrounds/gimnasio.jpg" alt="Desert-image">
+                <!-- <source media="(min-width: 440px)" srcset="./imgs/backgrounds/background2.jpg"> -->
+                <img class="background1" src="./imgs/backgrounds/gimnasio.jpg" alt="Desert-image">
             </picture>
         </section>
         <section class="formulario">
@@ -79,10 +83,12 @@
                         </select>
                     </div>
                     <div>
-                        <input type="reset" form="myForms" class="reset">
-                    </div>
-                    <div>
-                        <input type="submit" form="myForms" class="submit">
+                        <div>
+                            <input type="reset" form="myForms" class="reset">
+                        </div>
+                        <div>
+                            <input type="submit" form="myForms" class="submit">
+                        </div>
                     </div>
                 </form>
             </div>
@@ -95,66 +101,88 @@
                 <div class="titles">Fat</div>
                 <div class="titles">Carbohydrates</div>
                 <div class="titles">Deficit</div>
-                <div>0</div>
-                <div>0</div>
-                <div>0</div>
-                <div>0</div>
+                <div>
+                    <p id="deficit">-</p>
+                </div>
+                <div>
+                    <p id="proteinD">-</p>
+                </div>
+                <div>
+                    <p id="fatD">-</p>
+                </div>
+                <div>
+                    <p id="carbsD">-</p>
+                </div>
                 <div class="titles">Surplus</div>
-                <div>0</div>
-                <div>0</div>
-                <div>0</div>
-                <div>0</div>
+                <div>
+                    <p id="surplus">-</p>
+                </div>
+                <div>
+                    <p id="proteinS">-</p>
+                </div>
+                <div>
+                    <p id="fatS">-</p>
+                </div>
+                <div>
+                    <p id="carbsS">-</p>
+                </div>
                 <div class="titles">Maintain</div>
-                <div>0</div>
-                <div>0</div>
-                <div>0</div>
-                <div>0</div>
-                <div class="titles">Recomposing</div>
-                <div>0</div>
-                <div>0</div>
-                <div>0</div>
-                <div>0</div>
+                <div>
+                    <p id="maintain">-</p>
+                </div>
+                <div>
+                    <p id="proteinM">-</p>
+                </div>
+                <div>
+                    <p id="fatM">-</p>
+                </div>
+                <div>
+                    <p id="carbsM">-</p>
+                </div>
             </div>
         </section>
     </main>
     <footer>
         <section class="footer-container">
-            <div class="infoContact">
-                <h1 class="TitleFooter">INFO DE CONTACTO</h1>
-                <ul>
-                <li>
-                    <img src="./imgs/gmail.png" class="IconsFooter" alt="gmail">
-                    <h3>Correo: diegodiazdelaconcha93@gmail.com</h3>
-                </li>
-                <li>
-                    <img src="./imgs/portafolio (1).png" class="IconsFooter" alt="">
-                    <h3>Portfolio:</h3>
-                </li>
+            <div class="SocialMedia">
+                <img src="./imgs/Logotipo_BlancoNegro.png" alt="logotipo de la marca" class="logotipoFooter">
+                <ul class="Icons">
+                    <li>
+                        <a href="https://www.instagram.com/de_la_concha23/">
+                            <img src="./imgs/instagram.png" class="IconsSocialMedia" alt="Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/feed/">
+                            <img src="./imgs/linkedin.png" class="IconsSocialMedia" alt="Linkdin">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/LACONCHA232">
+                            <img src="./imgs/github (1).png" class="IconsSocialMedia" alt="GitHub">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./imgs/facebook.png" class="IconsSocialMedia" alt="Facebook">
+                        </a>
+                    </li>
                 </ul>
             </div>
-            <div class="SocialMedia">
-                <ul>
-                    <li>
-                        <img src="./imgs/instagram.png" class="IconsFooter" alt="Instagram">
-                        <a href="https://www.instagram.com/de_la_concha23/">Instagram</a>
-                    </li>
-                    <li>
-                        <img src="./imgs/linkedin.png" class="IconsFooter" alt="Linkdin">
-                        <a href="https://www.linkedin.com/feed/">linkedin</a>
-                    </li>
-                    <li>
-                        <img src="./imgs/github (1).png" class="IconsFooter" alt="GitHub">
-                        <a href="https://github.com/LACONCHA232">GitHub</a>
-                    </li>
-                    <li>
-                        <img src="./imgs/facebook.png" class="IconsFooter" alt="Facebook">
-                        <a href="">Facebook</a>
-                    </li>
-                </ul>
+            <div class="infoContact">
+                <div class="info">
+                    <!-- <img src="./imgs/gmail.png" class="IconsFooter1" alt="gmail"> -->
+                    <h1>Correo: diegodiazdelaconcha93@gmail.com</h1>
+                </div>
+                <div class="info">
+                    <!-- <img src="./imgs/portafolio (1).png" class="IconsFooter1" alt=""> -->
+                    <h1>Portfolio: Lorem ipsum dolor sit amet.</h1>
+                </div>
             </div>
         </section>
     </footer>
 </body>
 <script src="../src/index.js"></script>
 <script src="../src/menu_burguer.js"></script>
+
 </html>
