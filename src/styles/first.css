@@ -29,17 +29,17 @@ body{
         align-items: center;
         margin: 0 1rem;
         .logotipo1 {
-            width: 8rem;
+            width: 5rem;
             height: auto;
             margin-right: 1rem;
         }
         .logotipo2{
-            width: 15rem;
+            width: 13rem;
             height: auto;
         }
     }
     .burguer-icon {
-        height: 5rem;
+        height: 4rem;
         width: 100%;
     }
     .another-pages a {
@@ -48,25 +48,26 @@ body{
     .burguer-menu {
         display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 11rem;
+        position:absolute;
+        top: 8rem;
         right: 1rem;
-        width: 17rem;
+        width: 15rem;
         height: 24rem;
-        background-color: cornsilk;
+        background-color: #1e2d36;
         border-radius: 2rem;
         border: 0.1rem solid rgb(0, 0, 0);
         a {
             text-decoration: none;
             font-size: 1.5rem;
-            font-weight: bold;
-            color: rgb(0, 0, 0);
+            font-weight: 300;
+            color: rgb(255, 255, 255);
         }
         .links {
             /* border: 0.1rem solid rgb(0, 0, 0); */
             padding: 2rem 1rem;
             display: flex;
             align-items: center;
+            justify-content: center;
             .links-icons {
                 width: 3rem;
                 height: 3rem;
@@ -94,7 +95,7 @@ body{
         position: absolute;
         margin: 5rem;
         .title {
-            font-size: 4rem;
+            font-size: 3rem;
             font-weight: 300;
             color: white;
         }
@@ -109,7 +110,7 @@ body{
     }
     .background1 {
         width: 100%;
-        height: 70rem;
+        height: auto;
     }
 }
 /* FORMS */
@@ -148,6 +149,7 @@ body{
             input {
                 display: inline-block;
                 width: 100%;
+                height: 2.5rem;
             }
             .submit {
                 margin: 1rem 0;
@@ -155,6 +157,7 @@ body{
             select {
                 display: inline-block;
                 width: 100%;
+                height: 2.5rem;
             }
         }
     }
@@ -170,11 +173,11 @@ body{
     align-items: center;
     .results-container {
         width: 100%;
-        height: 25rem;
+        height: auto;
         display: grid;
         grid-template-columns: repeat(5,auto);
         gap: 1rem;
-        padding: 3rem;
+        padding: 3rem 1rem;
         background-color: black;
         border-radius: 1.5rem;
         font-size: 1.5rem;
@@ -210,10 +213,10 @@ footer{
             }
             .info{
                 h1{
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                     margin: 0.5rem;
                     color: white;
-                    font-weight: lighter;
+                    font-weight: 300;
                 }
             }
         }
@@ -222,7 +225,7 @@ footer{
             flex-wrap: wrap;
             justify-content: center;
             .logotipoFooter{
-                width: 25rem;
+                width: 20rem;
                 height: auto;
             }
             .Icons{
@@ -230,7 +233,7 @@ footer{
                 margin: auto;
                 list-style: none;
                 .IconsSocialMedia {
-                    width: 4rem;
+                    width: 3rem;
                     height: auto;
                     margin: 2rem;
                 }
@@ -239,13 +242,13 @@ footer{
     }
 }
 /* MEDIA QUERIES */ 
-/* and (max-width: 1030px) */
 @media (min-width: 700px){
     header{
         padding: 0 5rem;
     }
     #tipo2{
-        width: 30rem;
+        /* width: 30rem; */
+        
     }
     .results{
         padding: 0 5rem;
@@ -258,5 +261,16 @@ footer{
     }
     .IconsSocialMedia{
         width: 5rem;
+    }
+}
+@media (min-width: 900px) and (max-width: 1300px){
+    header{
+        padding: 0 auto;
+    }
+}
+
+@media (min-width: 1310px){
+    header{
+        padding: 0 auto;
     }
 }
